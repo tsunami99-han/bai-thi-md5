@@ -2,7 +2,7 @@
 <table class="table" border="1">
   <thead>
   <tr>
-    <th scope="col">ID</th>
+    <th scope="col">#</th>
     <th scope="col">Tên người chơi</th>
     <th scope="col">Tướng tủ</th>
     <th scope="col" colspan="2">Tác vụ</th>
@@ -10,7 +10,7 @@
   </thead>
   <tbody>
   <tr *ngFor="let player of players;index as i">
-    <th scope="row">{{player.id}}</th>
+    <th scope="row">{{i+1}}</th>
     <td><a [routerLink]="['/detail',player.id]">{{player.name}}</a></td>
     <td>{{player.champ}}</td>
     <td><a [routerLink]="['/edit',player.id]">Sửa</a></td>
