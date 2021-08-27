@@ -9,6 +9,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { CreatComponent } from './component/creat/creat.component';
 import { EditComponent } from './component/edit/edit.component';
 import { DeleteComponent } from './component/delete/delete.component';
+import { DetailComponent } from './component/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DeleteComponent } from './component/delete/delete.component';
     ListComponent,
     CreatComponent,
     EditComponent,
-    DeleteComponent
+    DeleteComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

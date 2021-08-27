@@ -11,7 +11,7 @@
   <tbody>
   <tr *ngFor="let player of players;index as i">
     <th scope="row">{{player.id}}</th>
-    <td>{{player.name}}</td>
+    <td><a [routerLink]="['/detail',player.id]">{{player.name}}</a></td>
     <td>{{player.champ}}</td>
     <td><a [routerLink]="['/edit',player.id]">Sửa</a></td>
     <td><a [routerLink]="['/delete',player.id]">Xóa</a></td>

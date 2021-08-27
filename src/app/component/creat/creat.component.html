@@ -1,4 +1,4 @@
-<h4>Tạo mới sách</h4>
+<h2>Tạo mới sách</h2>
 <form [formGroup]="playerForm" (ngSubmit)="submit()">
   <table>
     <tr>
@@ -17,6 +17,13 @@
       <td>Mô tả</td>
       <td><input type="text" formControlName="des"></td>
     </tr>
-    <tr><td colspan="2"><button>Tạo mới</button></td></tr>
+    <tr>
+      <td>
+        <button>Tạo mới</button>
+      </td>
+      <td>
+        <button routerLink="/list">Trở lại trang trước</button>
+      </td>
+    </tr>
   </table>
 </form>
