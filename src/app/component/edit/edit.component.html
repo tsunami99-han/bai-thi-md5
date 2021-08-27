@@ -1,0 +1,26 @@
+<h4>Tạo mới sách</h4>
+<form [formGroup]="playerForm" (ngSubmit)="update(id)">
+  <table>
+    <tr>
+      <td>Tên người chơi</td>
+      <td><input type="text" formControlName="id" readonly></td>
+    </tr>
+    <tr>
+      <td>Tên người chơi</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Tương tủ</td>
+      <td><input type="text" formControlName="champ"></td>
+    </tr>
+    <tr>
+      <td>KDA</td>
+      <td><input type="text" formControlName="kda"></td>
+    </tr>
+    <tr>
+      <td>Mô tả</td>
+      <td><input type="text" formControlName="des"></td>
+    </tr>
+    <tr><td colspan="2"><button>Tạo mới</button></td></tr>
+  </table>
+</form>

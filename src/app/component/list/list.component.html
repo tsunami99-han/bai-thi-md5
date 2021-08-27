@@ -1,3 +1,4 @@
+<h2>Danh sách người chơi</h2>
 <table class="table" border="1">
   <thead>
   <tr>
@@ -12,7 +13,7 @@
     <th scope="row">{{player.id}}</th>
     <td>{{player.name}}</td>
     <td>{{player.champ}}</td>
-<!--    <td><a [routerLink]="['/books/edit',player.id]">Sửa</a></td>-->
+    <td><a [routerLink]="['/edit',player.id]">Sửa</a></td>
 <!--    <td><a [routerLink]="['/books/delete',player.id]">Xóa</a></td>-->
   </tr>
   </tbody>
