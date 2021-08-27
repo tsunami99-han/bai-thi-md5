@@ -1,5 +1,5 @@
-<h4>Sửa thông tin người chơi nè!</h4>
-<form [formGroup]="playerForm" (ngSubmit)="update(id)">
+<h4>Bạn có muốn tiếp tục xóa!</h4>
+<form [formGroup]="playerForm" (ngSubmit)="delete(id)">
   <table>
     <tr>
       <td>Tên người chơi</td>
@@ -21,7 +21,7 @@
       <td>Mô tả</td>
       <td><input type="text" formControlName="des"></td>
     </tr>
-    <tr><td><button>Lưu thay đổi</button></td>
-    <td><button routerLink="/list">Trở lại trang trước</button></td></tr>
+    <tr><td><button>Xóa</button></td>
+      <td><button routerLink="/list">Trở lại trang trước</button></td></tr>
   </table>
 </form>

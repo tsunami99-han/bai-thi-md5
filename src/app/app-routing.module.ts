@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {ListComponent} from "./component/list/list.component";
 import {CreatComponent} from "./component/creat/creat.component";
 import {EditComponent} from "./component/edit/edit.component";
+import {DeleteComponent} from "./component/delete/delete.component";
 
 const routes: Routes = [{
   path: 'list',
@@ -13,6 +14,9 @@ const routes: Routes = [{
 },{
   path: 'edit/:id',
   component: EditComponent
+},{
+  path: 'delete/:id',
+  component: DeleteComponent
 }];
 
 @NgModule({
